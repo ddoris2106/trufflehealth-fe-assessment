@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,
+body,
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App,
+#root {
+	width: 100%;
+	height: 100vh;
+	padding: 0.4rem;
+	background-color: rgb(207, 220, 232);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: rgb(4, 7, 32);
+}
+
+button {
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	background-color: rgb(240, 248, 255);
+}
+
+.title {
+	font-size: 5.5rem;
+	margin-bottom: 1rem;
+	color: rgb(25, 25, 112);
+}
+
+.info {
+	width: 98%;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+.homeText {
+	font-size: 1.5rem;
+}
+
+.allForms {
+	margin: 0 auto;
+	width: 98%;
+}
+
+.allFormsList {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.listItem {
+	width: 100%;
+	padding: 0.5rem 2rem;
+	border: 0.1rem solid black;
+	border-radius: 0.25rem;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.25rem;
+}
+
+.uploadPage {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.formContainer {
+	width: 50%;
+	/* height: 50%; */
+	background-color: white;
+	border: 0.2rem solid black;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-size: 2.25rem;
+}
+
+.form {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+	font-size: 1rem;
+}
+
+.form label {
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem;
+	align-items: center;
+	width: fit-content;
+	height: 30px;
+	background-color: whitesmoke;
+}
+
+.form input {
+	width: 300px;
+	margin-left: 1rem;
+}
+
+.form input[type="submit"] {
+	width: 100px;
+	margin: 0;
+}
+
+.formReview {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.formImage {
+	width: 600px;
+	height: 400px;
 }
